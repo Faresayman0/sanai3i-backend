@@ -1,11 +1,10 @@
-
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
     server: {
         port: process.env.PORT || 3000,
-        host: true, // يجعل التطبيق متاحًا على الشبكة
+        host: true,
     },
     plugins: [
         laravel({
